@@ -1,9 +1,11 @@
-import express, { json } from 'express';
+import express, { json, Router } from 'express';
+import { routes } from './routes';
 
 const app = express();
-app.use(json())
+app.use(express.json())
+app.use(routes)
 
-app.listen(3333, () => {
+app.listen(8081, () => {
   console.log('runing...');
 })
 
