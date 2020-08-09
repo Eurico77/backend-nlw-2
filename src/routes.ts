@@ -1,4 +1,4 @@
-import { app } from "./server";
+
 import { Router } from "express";
 
 const routes = Router()
